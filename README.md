@@ -130,6 +130,15 @@ npx prisma studio
 
 ### Option 1: One-command startup
 
+Create `backend/.env` from `backend/.env.template`.
+
+Expected values:
+
+```env
+DATABASE_URL="postgres://postgres:postgres@localhost:5432/tilla_seaport?schema=public"
+PORT=3000
+```
+
 From the repository root:
 
 ```bash
@@ -237,7 +246,7 @@ npm test
 ## Notes
 
 - The frontend currently calls the backend at `http://localhost:3000/graphql`.
-- The import pipeline expects Excel column names such as `Port Name`, `Port Locode`, `Latitude`, `Longitude`, `Timezone Olson`, `Country ISO`, and `Port Source`.
+- The import pipeline expects Excel column names such as `Port Name`, `Port Locode`, `Latitude`, `Longitude`, `Timezone Olson`, `Country ISO`, and `Source`.
 - Prisma uses `locode` as the unique key for upsert operations.
 
 ## What can be improved in production:
