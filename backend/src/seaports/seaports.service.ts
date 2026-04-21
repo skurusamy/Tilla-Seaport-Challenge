@@ -8,7 +8,7 @@ export class SeaportService {
   async findAll() {
     return this.prisma.seaport.findMany({
       orderBy: {
-          portName: 'asc',
+          id: 'asc',
         },
       });
   }
