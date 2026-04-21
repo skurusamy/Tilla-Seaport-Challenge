@@ -16,12 +16,12 @@ export class SeaportEntity {
   @Field(() => Float)
   longitude!: number;
 
-  @Field()
-  timezoneOlson!: string;
+  @Field({nullable: true})
+  timezoneOlson?: string;
 
-  @Field()
-  countryIso!: string;
+  @Field({nullable: true})
+  countryIso?: string;
 
-  @Field()
-  source!: string;
+  @Field({ nullable: true })
+  source?: string;
 }

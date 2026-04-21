@@ -8,11 +8,11 @@ type SeaportEntity {
   locode: String!
   latitude: Float!
   longitude: Float!
-  timezoneOlson: String!
-  countryIso: String!
-  source: String!
+  timezoneOlson: String
+  countryIso: String
+  source: String
 }
 
 type Query {
-  seaports: [SeaportEntity!]!
+  findAllSeaports: [SeaportEntity!]!
 }
