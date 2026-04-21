@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "bootstrap": "./bootstrap.sh",
+    "test": "./test.sh",
+    "test:backend": "npm --prefix backend run test:run",
+    "test:frontend": "npm --prefix frontend run test:run"
+  },
   "dependencies": {
     "@prisma/client": "^6.19.3",
     "dotenv": "^17.4.2",

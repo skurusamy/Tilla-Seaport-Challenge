@@ -60,6 +60,7 @@ This project watches for seaport Excel files, cleans and validates each record, 
 |       `-- pages
 |-- docker-compose.yaml
 `-- bootstrap.sh
+`-- test.sh 
 ```
 
 ## Prerequisites
@@ -229,18 +230,32 @@ query {
 
 ## Testing
 
-Backend tests:
+Run both test suites from the repository root:
 
 ```bash
-cd backend
+./test.sh
+```
+
+This script installs backend and frontend dependencies first, so it can be run immediately after cloning the repo.
+
+You can also use the root npm script:
+
+```bash
 npm test
 ```
 
-Frontend tests:
+Backend tests only:
+
+```bash
+cd backend
+npm run test:run
+```
+
+Frontend tests only:
 
 ```bash
 cd frontend
-npm test
+npm run test:run
 ```
 
 ## Notes
