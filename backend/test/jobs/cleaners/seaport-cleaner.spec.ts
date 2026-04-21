@@ -11,7 +11,7 @@ describe('Seaport Cleaner', () => {
             'Longitude': '56.78',
             'Timezone Olson': 'UTC',
             'Country ISO': 'US',
-            'Port Source': 'Test Source'
+            'Source': 'Test Source'
         };
         const expectedOutput = {
             portName: 'Test Port',
@@ -34,7 +34,7 @@ describe('Seaport Cleaner', () => {
             'Longitude': '56.78',
             'Timezone Olson': 'UTC',
             'Country ISO': 'US',
-            'Port Source': 'Test Source'
+            'Source': 'Test Source'
         };
         const expectedOutput = {
             portName: 'Test Port',
@@ -57,7 +57,7 @@ describe('Seaport Cleaner', () => {
             'Longitude': '56.78',
             'Timezone Olson': 'UTC',
             'Country ISO': 'US',
-            'Port Source': 'Test Source'
+            'Source': 'Test Source'
         };
 
         const expectedOutput = {

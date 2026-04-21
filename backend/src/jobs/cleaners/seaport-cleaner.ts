@@ -32,7 +32,7 @@ export function cleanSeaportRecord(record: Record<string, unknown>) {
     const longitude = toNumber(record['Longitude']) ?? null;
     const timezoneOlson = toTrimmedString(record['Timezone Olson']) ?? null;
     const countryIso = toTrimmedString(record['Country ISO'])?.toUpperCase() ?? null;
-    const source = toTrimmedString(record['source']) ?? null;
+    const source = toTrimmedString(record['Source']) ?? null;
 
     return {
         portName,
