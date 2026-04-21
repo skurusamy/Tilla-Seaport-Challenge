@@ -1,0 +1,18 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type SeaportEntity {
+  id: String!
+  portName: String!
+  locode: String!
+  latitude: Float!
+  longitude: Float!
+  timezoneOlson: String!
+  countryIso: String!
+  source: String!
+}
+
+type Query {
+  seaports: [SeaportEntity!]!
+}
