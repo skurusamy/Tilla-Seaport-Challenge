@@ -17,10 +17,10 @@ export class SeaportImportScheduler {
         try {
             const result = await loadPendingSeaportFiles();
             if (result.length == 0) {
-                console.log(`No pending seaport files to import at ${new Date().toISOString()}`);
+                console.log(`No pending seaport files to import at ${new Date().toLocaleString()}`);
                 return;
             }
-            console.log(`Seaport import completed successfully: ${result.length} files at ${new Date().toISOString()}`);
+            console.log(`Seaport import completed successfully: ${result.length} files at ${new Date().toLocaleString()}`);
             console.log(JSON.stringify(result, null, 2));
         } catch (error) {
             console.error('Error occurred during seaport import:', error);
